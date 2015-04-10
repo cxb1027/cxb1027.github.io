@@ -64,6 +64,10 @@ body{
     margin-right:20px;
 }
 
+.h_menu ul li.active a{
+    color:#3878DE;
+}
+
 .h_menu ul li a{
     display:block;
     text-transform:uppercase;
