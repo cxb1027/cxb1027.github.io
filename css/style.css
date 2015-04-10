@@ -40,6 +40,7 @@ body{
     width:80%;
 }
 
+/*------------------------------Home---------------------------------------*/
 /*-----header starts-----*/
 .header_bg{
     background:#23252A;
@@ -122,7 +123,7 @@ body{
 .slider_bg{
     height:500px;
     width:100%;
-    background: url('../images/try.jpg');
+    background: url('../images/slider_bg.jpg');
     background-size:auto;
     -webkit-background-size:cover;
     -moz-background-size: cover;
@@ -213,18 +214,6 @@ body{
 
 
 
-/*TODO*/
-.slider1{
-	padding: 4% 4%;
-}
-
-.slider1 h2{
-	font-size: 2em;
-	color:#ffffff;
-	font-weight: 100;
-	text-transform: capitalize;
-}
-/*TODO end*/
 
 /*-----top_grid starts-----*/
 .top_bg{
@@ -354,7 +343,7 @@ h2.style{
 	color: #ffffff;
 	font-size: 2.2em;
 	text-transform: uppercase;
-	font-weight: 100;
+	font-weight: 400;
 }
 
 .mid_bg1{
@@ -363,9 +352,10 @@ h2.style{
 }
 
 p.para{
-	width: 80%;
+    padding-top:2%;
+	width: 85%;
 	margin: 0 auto;
-	font-size: 0.8725em;
+	font-size: 1em;
 	color: #C4C4C4;
 	line-height: 1.8em;
 	text-shadow: 0 1px 0 rgb(4, 5, 10);
@@ -496,3 +486,111 @@ p.para{
 	color: #c9c9c9;
 }
 
+
+
+/*----------------------------header image--------------------------------*/
+/*-----slider starts-----*/
+.header_img{
+    width:100%;
+    height:200px;
+    background:url('../images/slider_bg_other.jpg');
+}
+
+.header_img_desc{
+    width:40%;
+    display:block;
+    float:right;
+    padding:4%;
+    margin-right:10%;
+}
+
+.header_img h2{
+    font-size:4em;
+	color:#ffffff;
+	text-transform: capitalize;
+    font-weight:400;
+}
+
+
+
+
+/*----------------------------------About Me-------------------------------*/
+.about{
+    text-align:left;
+    display:block;
+    padding:4%;
+}
+
+.education_bg{
+    text-align:center;
+}
+
+.education_bg img{
+    margin-top:20px;
+}
+
+.about h2{
+    margin-top:30px;
+    font-size:2em;
+    color:#fff;
+    text-align:left;
+    margin-left:10%;
+}
+
+.about h3{
+    font-size:1.4em;
+    color:#fff;
+    text-align:center;
+    width:95%;
+    margin:0 auto;
+    padding-top:10px;
+}
+
+.job_target p{
+    font-weight:500;
+}
+
+.education_bg_img{
+}
+
+.btn{
+    margin-top:30px;
+	font-family: "Open Sans", arial, sans-serif;
+	-webkit-appearance: none;
+	cursor: pointer;
+	color: #929499;
+	background: #23252A;
+	border: 1px solid #2B2D30;
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 12px 38px;
+	font-size: 0.875em;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	outline: none;
+}
+.btn:hover {
+	background: #3878DE;
+	color: #ffffff;
+}
+
+.intro_me{
+    padding:20px 0;
+}
+
+.intro_me h3{
+    color:#FFF;
+    font-size:1.4em;
+
+}
+
+.LatestNews a, span, p{
+    color:#fff;
+    font-size:0.875em;
+}
+
+.LatestNews{
+    padding-top:30px;
+}
