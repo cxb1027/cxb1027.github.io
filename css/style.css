@@ -525,6 +525,10 @@ p.para{
     padding:4%;
 }
 
+.about-info{
+    border-right:1px ridge #34363C; 
+}
+
 .education_bg{
     text-align:center;
 }
@@ -587,7 +591,6 @@ p.para{
 .intro_me h3{
     color:#FFF;
     font-size:1.4em;
-
 }
 
 .LatestNews a, span, p{
@@ -596,7 +599,11 @@ p.para{
 }
 
 .LatestNews{
-    padding-top:30px;
+    padding:20px 40px;
+}
+
+.News{
+    text-align:center;
 }
 
 
