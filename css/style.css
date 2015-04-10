@@ -501,11 +501,11 @@ p.para{
 }
 
 .header_img_desc{
-    width:40%;
+    width:50%;
     display:block;
     float:right;
     padding:4%;
-    margin-right:10%;
+    margin-right:5%;
 }
 
 .header_img h2{
@@ -597,4 +597,79 @@ p.para{
 
 .LatestNews{
     padding-top:30px;
+}
+
+
+
+/*---------------------------------Contact Me-------------------------------*/
+.contact_submit{
+	text-align:left;
+}
+
+.contact-form{
+    padding:20px;
+    display:block;
+}
+
+.contact-form h4{
+    color: #929499;
+	font-size: 1.2em;
+	text-transform: capitalize;
+}
+
+.contact-form input[type="text"], .contact-form textarea{
+    font-family:"Open Sans", arial, sans-serif;
+    background: rgba(255, 255, 255, 0.04);
+	border: 1px solid #2E333A;
+    color: #999999;
+	padding: 8px;
+    width:80%;
+    margin-bottom:30px;
+}
+
+.contact-form textarea{
+    height:100px;
+}
+
+.contact-form input[type="submit"]{
+	font-family: "Open Sans", arial, sans-serif;
+	margin-top: 20px;
+	-webkit-appearance: none;
+	cursor: pointer;
+	color: #929499;
+	background: #23252A;
+	border: 1px solid #2B2D30;
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 12px 38px;
+	font-size: 0.875em;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	outline: none;
+}
+
+.contact-form input[type="submit"]:hover{
+    background:#3878DE;
+    color:#FFF;
+}
+
+.contact_info > p{
+    line-height:2em;
+    width:95%;
+    color:#929499;
+    font-size:0.8em;
+}
+
+.contact_info address p{
+    margin:20px;
+}
+
+.contact_info address p a{
+    color:#929499;
+}
+
+.contact_info address p a:hover{
+    color:#3878DE;
 }
