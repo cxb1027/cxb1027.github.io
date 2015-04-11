@@ -31,7 +31,7 @@ img{max-width:100%;}
 
 body{
     font-family:"Open Sans", Arial, sans-serif;
-    background:#ffffff;
+    background:#000000;
     font-size:1em;
 }
 
@@ -317,16 +317,20 @@ body{
 .portfolio img{
     margin-bottom:-5px;
     -webkit-filter:grayscale(100%);
-    filter:gray;/* IE6-9 */ 
+    -o-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
     filter: grayscale(1);/* W3C */ 
     transition:all 0.3s ease-in-out;
     -webkit-transition:all 0.3s ease-in-out;
     -moz-transition:all 0.3s ease-in-out;
     -o-transition:all 0.3s ease-in-out;
+    border-radius:12px;
 }
 
 .portfolio img:hover{
     -webkit-filter:grayscale(0);
+    -o-filter: grayscale(0);
+    -moz-filter: grayscale(0);
 }
 
 
