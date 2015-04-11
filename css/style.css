@@ -316,6 +316,15 @@ body{
 
 .portfolio img{
     margin-bottom:-5px;
+    -webkit-filter:grayscale(100%);
+    transition:all 0.3s ease-in-out;
+    -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    -o-transition:all 0.3s ease-in-out;
+}
+
+.portfolio img:hover{
+    -webkit-filter:grayscale(0);
 }
 
 
