@@ -317,6 +317,8 @@ body{
 .portfolio img{
     margin-bottom:-5px;
     -webkit-filter:grayscale(100%);
+    filter:gray;/* IE6-9 */ 
+    filter: grayscale(1);/* W3C */ 
     transition:all 0.3s ease-in-out;
     -webkit-transition:all 0.3s ease-in-out;
     -moz-transition:all 0.3s ease-in-out;
@@ -689,4 +691,33 @@ p.para{
 
 .contact_info address p a:hover{
     color:#3878DE;
+}
+
+
+/*-------------------------------Projects-----------------------------*/
+.projects_para p{
+    margin-bottom:20px;
+}
+
+.project p{
+    margin:10px 20px;
+    text-align:left;
+}
+
+.projects_main{
+    padding:40px;
+}
+
+/*---------------------------Life in Boston-----------------------------*/
+.life_main{
+   padding:40px;
+}
+
+.life{
+    margin:10px 0;
+}
+
+.life p{
+    margin:10px;
+    text-align:left;
 }
