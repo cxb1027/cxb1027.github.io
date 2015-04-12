@@ -331,6 +331,7 @@ body{
     -webkit-filter:grayscale(0);
     -o-filter: grayscale(0);
     -moz-filter: grayscale(0);
+    border-radius:0;
 }
 
 
@@ -725,3 +726,6 @@ p.para{
     margin:10px;
     text-align:left;
 }
+
+
+/*------------------------------coming soon-------------------------*/
