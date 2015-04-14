@@ -38,6 +38,7 @@ body{
 .wrap{
     margin:0 auto;
     width:80%;
+    min-height:100%;
 }
 
 /*------------------------------Home---------------------------------------*/
@@ -727,5 +728,86 @@ p.para{
     text-align:left;
 }
 
+.life_choose{
+    margin:20px 0;
+}
 
-/*------------------------------coming soon-------------------------*/
+.life_choose li{
+    
+    list-style-type:none;
+    display:inline-block;
+}
+
+.life_choose li a{
+    font-size:1.5em;
+    color:#929499;
+    padding:3px 25px;
+    background:#23252A;
+    border: 1px solid #2B2D30;
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.life_choose .life_blog a{
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px;
+}
+
+.life_choose .life_gallery a{
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px;
+
+}
+
+.life_choose a.active{
+    border: 1px solid #3878DE;
+    background: #3878DE;
+    color: #FFF;
+}
+
+.life_choose li a:hover {
+    border: 1px solid #3878DE;
+    background: #3878DE;
+    color: #FFF;
+}
+
+#blog_main{
+    display:none;
+}
+
+#gallery_main{
+    display:none;
+}
+
+.life_selected{
+    display:block;
+}
+
+.swiper-container {
+    padding:50px 0;
+    height: 600px;
+    width: 100%;
+}
+
+.swiper-slide{
+    background:url(../images/ser_pic1.jpg) no-repeat 0px 0px;
+    width:500px;
+    height: 500px;
+    background-position:center;
+    background-size: cover;
+}
+
+.swiper-slide .comment{
+    background:rgba(0,0,0,0.6);  
+    position:absolute;
+    bottom:0;
+    margin-bottom:0;
+}
+
+.swiper-slide .comment p{
+    position:relative;
+    font-size:2em;
+    color:#fff;
+}
