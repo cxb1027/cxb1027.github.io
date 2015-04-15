@@ -9,11 +9,19 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/unslider.js"></script>
+    <link rel="Shortcut Icon" href="images/favicon.ico"/>
+    <link rel="Bookmark" href="images/favicon.ico" />
     <!--slider javascript-->
     <script>
         $(function () {
             $('.slider').unslider();
         });
+        $(document).ready(function () {
+            $("span.menu").on("click", function () {
+                $(this).closest(".header").find(".nav").slideToggle();
+            })
+        })
+
     </script>
 </head>
 
@@ -31,8 +39,11 @@
                         <li><a href="#" target="_blank"></a></li>
                     </ul>
                 </div>
+                <span class="menu"></span>
                 <div class="h_menu">
-                    <ul>
+                    
+                    
+                    <ul class="nav">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="projects.html">Project</a></li>
                         <li><a href="life.html">Life in Boston</a></li>
@@ -40,6 +51,7 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
+                
                 <div class="clearfix"></div>
             </div>
         </div>
