@@ -9,7 +9,8 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/unslider.js"></script>
-    <link rel="Shortcut Icon" href="images/favicon.ico"/>
+    <script src="js/jquery.mixitup.min.js"></script>
+<link rel="Shortcut Icon" href="images/favicon.ico"/>
     <link rel="Bookmark" href="images/favicon.ico" />
     <!--slider javascript-->
     <script>
@@ -19,6 +20,9 @@
         $(document).ready(function () {
             $("span.menu").on("click", function () {
                 $(this).closest(".header").find(".nav").slideToggle();
+            })
+            $(function () {
+                $("#Container").mixItUp();
             })
         })
 
@@ -36,7 +40,7 @@
                 <div class="social-icons">
                     <ul>
                         <li><a href="#" target="_blank"></a></li>
-                        <li><a href="#" target="_blank"></a></li>
+                        <li><a href="mailto:xuebo@caoxuebo.me" ></a></li>
                     </ul>
                 </div>
                 <span class="menu"></span>
@@ -103,13 +107,13 @@
         <div class="wrap">
             <div class="top_grid">
                 <h2>my work</h2>
-                <ul id="filters" class="clearfix">
-                    <li><span class="filter active" data-filter="icon logo web">UI</span></li>
-                    <li><span class="filter" data-filter="app card web">website</span></li>
-                    <li><span class="filter" data-filter="icon web card">photography</span></li>
-                    <li><span class="filter" data-filter="web app icon card">freebie</span></li>
-                    <li><span class="filter" data-filter="icon app web logo">identity</span></li>
-                    <li><span class="filter" data-filter="app card icon logo web">all</span></li>
+                <ul id="filter" class="clearfix">
+                    <li><span class="filter" data-filter="all">All</span></li>
+                    <li><span class="filter" data-filter=".website">Website</span></li>
+                    <li><span class="filter" data-filter=".jsp">Jsp</span></li>
+                    <li><span class="filter" data-filter=".other">other</span></li>
+                    <li><span class="filter" data-filter="none">identity</span></li>
+                    <li><span class="filter" data-filter="none">all</span></li>
                 </ul>
                 <div class="clearfix"></div>
             </div>
@@ -122,112 +126,43 @@
         <div class="wrap">
             <div class="main" >
                 <div id="portfoliolist">
-                    <!--1-->
-                    <div class="grid_list col-md-12">
-                        <div class="portfolio logo1" data-cat="logo">
-                            <div class="portfolio-wrapper">
-                                <a href="coming_soon.html">
-                                    <img src="images/logo_tetris.jpg" alt="Portfolio-1" />
-                                </a>
-                                <div class="label">
-                                    <div class="label-text">
-                                        <a class="text-title">work #1</a>
-                                        <span class="text-category">photography</span>
-                                    </div>
-                                    <a href="coming_soon.html"><div class="label-bg"></div></a>
-                                </div>
-                            </div>
+
+                    <div id="Container">
+                        <div class="mix java" data-myorder="1">
+                            <a href="coming_soon.html">
+                                <img src="images/logo_tetris.jpg" alt="Portfolio-1" />
+                            </a>
                         </div>
+                        <div class="mix website" data-myorder="2">
+                            <a href="coming_soon.html">
+                                <img src="images/logo_personal_web.jpg" alt="Image 2" />
+                            </a>
+                        </div>
+                        <div class="mix website" data-myorder="2">
+                            <a href="coming_soon.html">
+                                <img src="images/logo_fashionpress.jpg" alt="Image 2" />
+                            </a>
+                        </div>
+                        <div class="mix jsp" data-myorder="3">
+                            <a href="coming_soon.html">
+                                <img src="images/logo_fashionpress.jpg" alt="Image 2" />
+                            </a>
+                        </div>
+                        <div class="mix other" data-myorder="4">
+                            <a href="coming_soon.html">
+                                <img src="images/logo_minto.jpg" alt="Image 2" />
+                            </a>
+                        </div>
+
                     </div>
-                    <div class="clearfix"></div>
-                    <!--2-->
-                    <div class="grid_list1 grid_top col-md-6">
-                        <div class="portfolio app" data-cat="app">
-                            <div class="portfolio-wrapper">
-                                <a href="coming_soon.html">
-                                    <img src="images/logo_fashionpress.jpg" alt="Image 2" />
-                                </a>
-                                <div class="label">
-                                    
-                                    <a href="details.html">
-                                        <div class="label-bg">
-                                            <h1 class="text-title">work #2</h1>
-                                            <span class="text-category">photography</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>	
-                    <!--3-->
-                    <div class="grid_list2 grid_top col-md-3">
-                        <div class="portfolio web" data-cat="web">
-                            <div class="portfolio-wrapper">
-                                <a href="coming_soon.html">
-                                    <img src="images/logo_minto.jpg" alt="Image 2" />
-                                </a>
-                                <div class="label">
-                                    <div class="label-text">
-                                        <a class="text-title">work #4</a>
-                                        <span class="text-category">photography</span>
-                                    </div>
-                                    <a href="coming_soon.html"><div class="label-bg"></div></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio web grid_top" data-cat="web">
-                            <div class="portfolio-wrapper">
-                                <a href="coming_soon.html">
-                                    <img src="images/pic6.jpg" alt="Image 2" />
-                                </a>
-                                <div class="label">
-                                    <div class="label-text">
-                                        <a class="text-title">work #6</a>
-                                        <span class="text-category">photography</span>
-                                    </div>
-                                    <a href="coming_soon.html"><div class="label-bg"></div></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>			
-                    <!--4-->
-                    <div class="grid_list2 grid_top col-md-3">
-                        <div class="portfolio card" data-cat="card">
-                            <div class="portfolio-wrapper">
-                                <a href="coming_soon.html">
-                                    <img src="images/pic3.jpg" alt="Image 2" />
-                                </a>
-                                <div class="label">
-                                    <div class="label-text">
-                                        <a class="text-title">work #3</a>
-                                        <span class="text-category">photography</span>
-                                    </div>
-                                    <a href="coming_soon.html"><div class="label-bg"></div></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio card grid_top" data-cat="card">
-                            <div class="portfolio-wrapper">
-                                <a href="coming_soon.html">
-                                    <img src="images/pic5.jpg" alt="Image 2" />
-                                </a>
-                                <div class="label">
-                                    <div class="label-text">
-                                        <a class="text-title">work #5</a>
-                                        <span class="text-category">photography</span>
-                                    </div>
-                                    <a href="coming_soon.html"><div class="label-bg"></div></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>	
+
+
+	
                     <!--ends-->
                 </div>
                 <div class="clearfix"></div>
                 <!-- container -->
-                <script type="text/javascript" src="js/fliplightbox.min.js"></script>
-                <script type="text/javascript">$('body').flipLightBox()</script>
-                
+             
 
 
             </div>

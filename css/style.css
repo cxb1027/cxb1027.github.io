@@ -241,17 +241,21 @@ body{
     font-weight:600;
 }
 
-#filters {
+#Container .mix{
+    display:none;
+}
+
+#filter {
 	float: right;
 	list-style:none;
 }
 
-#filters li {
+#filter li {
 	float:left;
 	margin-right: 5px;
 }
 
-#filters li span {
+#filter li span {
 	cursor:pointer;
 	font-size: 0.8725em;
 	color:#999999;
@@ -268,12 +272,12 @@ body{
     border-radius:4px;
 }
 
-#filters li span.active {
+#filter li span.active {
 	color:#ffffff;
 	background: #3878DE;
 }
 
-#filters li span:hover{
+#filter li span:hover{
 	color:#ffffff;
 	background: #3878DE;	
 }
@@ -316,7 +320,11 @@ body{
 	cursor:pointer;
 }
 
-.portfolio img{
+.mix{
+    margin:10px;
+}
+
+.mix img{
     margin-bottom:-5px;
     -webkit-filter:grayscale(100%);
     -o-filter: grayscale(100%);
@@ -329,7 +337,7 @@ body{
     border-radius:12px;
 }
 
-.portfolio img:hover{
+.mix img:hover{
     -webkit-filter:grayscale(0);
     -o-filter: grayscale(0);
     -moz-filter: grayscale(0);
@@ -784,7 +792,11 @@ p.para{
 
 /*---------------------------Life in Boston-----------------------------*/
 .life_main{
-   padding:40px;
+   padding:13px 20px;
+}
+
+.life_main h2{
+    display:none;
 }
 
 .life{
