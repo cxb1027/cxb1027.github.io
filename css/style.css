@@ -872,18 +872,18 @@ p.para{
 }
 
 .swiper-slide{
-    background:url(../images/ser_pic1.jpg) no-repeat 0px 0px;
     width:500px;
-    height: 500px;
+    height: 400px;
     background-position:center;
     background-size: cover;
 }
 
 .swiper-slide .comment{
-    background:rgba(0,0,0,0.6);  
+    background:rgba(0,0,0,0.4);  
     position:absolute;
     bottom:0;
     margin-bottom:0;
+    width:100%;
 }
 
 .swiper-slide .comment p{
