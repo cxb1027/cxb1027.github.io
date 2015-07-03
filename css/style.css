@@ -54,6 +54,18 @@ body{
 .logo{
     float:left;
 }
+
+#menu_line {
+    position:absolute;
+    height:3px;
+    background:#3878DE;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+
 /*nav*/
 .h_menu{
     margin-top:8px;
@@ -457,7 +469,7 @@ p.para{
 }
 
 .footer{
-	padding: 2% 4%;
+	padding: 1% 4%;
 }
 
 .soc-icons {
@@ -507,7 +519,7 @@ p.para{
 
 .copy{
 	text-align:center;
-	margin:2% 0; 
+	margin:1% 0; 
 }
 
 .copy p{

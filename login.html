@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=IM+Fell+English:400,400italic|Open+Sans:300,400" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/login.css" rel="stylesheet" type="text/css" />
+    <link rel="Shortcut Icon" href="images/favicon.ico" />
+    <link rel="Bookmark" href="images/favicon.ico" />
+    <script src="js/jquery-1.11.1.min.js"</head>
+
+<body>
+
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TDMHPK"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TDMHPK');</script>
+    <!-- End Google Tag Manager -->
+    <!--header starts-->
+    <div class="header_bg">
+        <div class="wrap">
+            <div class="header">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.gif" alt="Logo" /></a>
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="#" target="_blank"></a></li>
+                        <li><a href="mailto:xuebo@caoxuebo.me"></a></li>
+                    </ul>
+                </div>
+                <div class="h_menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Project</a></li>
+                        <li> <a href="life.html">Life in Boston</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--header ends-->
+
+
+    <!--main login page starts-->
+    <div class="login_main">
+        <div class="login">
+            <div class="login-top">
+                <h1>LOGIN</h1>
+                <form>
+                    <input type="text" value="User ID" onfocus="this.value = '';" onblur="if (this.value == '') { this.value = 'User ID'; }" />
+                    <input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') { this.value = 'Password'; }" />
+                </form>
+                <div class="forgot">
+                    <a href="#">Forgot Password</a>
+                    <input type="submit" value="Login" />
+                </div>
+
+            </div>
+            <div class="login-bottom">
+                <h3>New User <a href="#">Register</a> Here </h3>
+            </div>
+        </div>
+    </div>
+    <!--main login page ends-->
+
+
+    <!--fotter starts-->
+    <div class="footer_bg">
+        <div class="wrap">
+            <div class="footer">
+                <div class="soc-icons">
+                    <ul>
+                        <li><a href="#" target="_blank"></a></li>
+                        <li><a href="#" target="_blank"></a></li>
+                        <li><a href="#" target="_blank"></a></li>
+                        <li><a href="#" target="_blank"></a></li>
+                        <li><a href="#" target="_blank"></a></li>
+                        <li><a href="#" target="_blank"></a></li>
+                    </ul>
+                </div>
+                <div class="copy">
+                    <p class="link"><span>Copyright &copy; 2015.Xuebo Cao All rights reserved.</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer ends-->
+
+
+    <script type="text/javascript">
+        var footer_height = $(".footer_bg").height();
+        var window_height = $(window).height();
+        var header_height = $(".header_bg").height();
+        var login_height = $(".login-top").height() + 140 + $(".login-bottom").height();
+        var main_heigh = window_height - header_height - footer_height;
+        var margin = (main_heigh - login_height) / 2;
+        $(".login").height(main_heigh);
+        $(".login").css({ "padding-top": margin });
+    </script>
+
+
+
+
+</body>
+
+</html>

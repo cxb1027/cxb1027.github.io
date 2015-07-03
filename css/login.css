@@ -1,0 +1,147 @@
+.login_main {
+    width:100%;
+    background: #1C1E23;
+}
+
+
+.login {
+    margin:auto;
+    border-top:2px ridge #34363C;
+    border-bottom:2px ridge #34363C;
+}
+
+.login-top {
+    background: #E1E1E1;
+    margin: 0 auto;
+    border-radius: 25px 25px 0 0;
+    -webkit-border-radius: 25px 25px 0px 0px;
+    -moz-border-radius: 25px 25px 0px 0px;
+    -o-border-radius: 25px 25px 0px 0px;
+    padding: 40px 60px;
+}
+
+.login-top h1{
+    text-align:center;
+    font-size:27px;
+    font-weight:500;
+    color:#F45B4B;
+    margin-bottom:20px;
+}
+
+.login-top input[type="text"], input[type="password"]{
+    width:88%;
+    margin:0px 0px 12px 0px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #818181;
+    padding:15px 12px;
+    background:#CACACA;
+    border: 1px solid #ccc;
+    border-radius:25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -o-border-radius: 25px;
+    -webkit-appearance: none;
+}
+
+.forgot {
+    text-align: right;
+}
+
+.forgot a {
+    font-size: 13px;
+    font-weight: 500;
+    color: #F45B4B;
+    display: inline-block;
+    border-right: 2px solid #F45B4B;
+    padding: 0 7px 0 0;
+}
+
+.forgot a:hover{
+    color:#818181;
+}
+
+.forgot input[type="submit"] {
+    background: #F45B4B;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 8px 7px;
+    width: 20%;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 6px;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    margin: 0px 7px 0px 3px;
+    outline: none;
+    border: none;
+}
+
+.forgot input[type="submit"]:hover{
+    background:#818181;
+    transition:0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+.login-bottom {
+    background: #E15748;
+    padding: 30px 65px;
+    border-radius: 0 0 25px 25px;
+    -webkit-border-radius: 0px 0px 25px 25px;
+    -moz-border-radius: 0px 0px 25px 25px;
+    -o-border-radius: 0px 0px 25px 25px;
+    text-align: right;
+}
+
+.login-bottom h3{
+    font-size:14px;
+    font-weight:500;
+    color:#fff;
+}
+
+.login-bottom h3 a{
+    font-size:25px;
+    font-weight:500;
+    color:#fff;
+}
+
+.login-bottom h3 a:hover {
+	color:#696969;
+	transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+
+
+
+/*------responsive starts here--------*/
+@media(max-width:1440px) {
+    .login {
+        width: 33%;
+    }
+}
+
+@media(max-width:1280px){
+    .login {
+        width: 40%;
+    }
+}
+
+@media(max-width:1024px){
+    .login {
+        width: 52%;
+    }
+}
+
+@media(max-width:768px){
+    .login {
+        width: 70%;
+    }
+}
